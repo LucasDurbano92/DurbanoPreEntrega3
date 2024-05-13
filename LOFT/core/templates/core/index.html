@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+
+
+{% block titulo %}
+    <h1>Inicio</h1>
+{% endblock titulo %}
+
+{% block contenido %}
+    <div>
+        <a href="{% url 'clase:index' %}">Lista de Ventas</a>
+    </div>
+{% endblock contenido %}

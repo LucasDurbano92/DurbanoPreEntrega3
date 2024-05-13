@@ -4,8 +4,5 @@
 
 # Durbano Lucas
 
-## Facilitar a los clientes a poder solicitar los marcos para sus obras de arte.
+## Facilitar a los clientes a poder comprar sus perifericos.
 
-## Mejoras Futuras
-
-## Problemas conocidos

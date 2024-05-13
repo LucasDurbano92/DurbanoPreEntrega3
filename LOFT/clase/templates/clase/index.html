@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+
+{% block titulo %}
+    Venta de Perifericos
+{% endblock titulo %}
+
+{% block contenido %}
+    {% for ventas_de_perifericos in ventas %}
+        <h1>{{ ventas_de_perifericos.Nro_Venta}} | {{ ventas_de_perifericos.cliente}} | {{ ventas_de_perifericos.vendedor}}</h1>
+        <p>Productos:</p>
+        <ul>
+            {% for producto in ventas_de_perifericos.producto.all %}
+                <li>{{producto.nombre}}</li>
+            {% endfor %}
+        </ul>
+        <!-- <p>{{ventas_de_perifericos.producto }}</p> -->
+    {% endfor %}
+{% endblock contenido %}
