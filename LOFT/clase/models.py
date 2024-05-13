@@ -19,7 +19,13 @@ class Producto(models.Model):
 
     def __str__(self) -> str:
         return self.nombre
-    
+
+class Precio(models.Model):
+    nombre = models.CharField(max_length=255, unique=True)
+
+    def __str__(self) -> str:
+        return self.nombre
+
 
 class Venta(models.Model):
     Nro_Venta = models.PositiveIntegerField(unique=True)
