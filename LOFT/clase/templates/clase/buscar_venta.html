@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% block title %}
+    Producto | Producto: Busqueda
+{% endblock title %}
+{% block body_title %}
+    Producto: Busqueda de Venta
+{% endblock body_title %}
+{% block busqueda %}
+    <form method="GET" action="{% url 'clase:buscar_venta' %}">
+        <input type="text" name="q" placeholder="Buscar Venta">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <ul>
+        {% for venta in ventas %}
+        <h3><li><p>{{ venta.Nro_Venta }} | Cliente: {{venta.cliente}}  | Vendedor: {{venta.vendedor}}</p></h3></li>
+            <!-- <li>{{ venta.cliente }}</li> -->
+         {% endfor %}
+    </ul>
+{% endblock busqueda %} 

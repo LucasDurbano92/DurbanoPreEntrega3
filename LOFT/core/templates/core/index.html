@@ -7,6 +7,25 @@
 
 {% block contenido %}
     <div>
-        <a href="{% url 'clase:index' %}">Lista de Ventas</a>
+        <h2><a href="{% url 'clase:index' %}">Lista de Ventas</a></h2>
     </div>
 {% endblock contenido %}
+
+{% block ventas %}
+<div>
+        <h2><a href="{% url 'clase:buscar_venta' %}">Busqueda Venta</a></h2>
+    </div>
+{% endblock ventas %}
+
+
+{% block busqueda %}
+    <div>
+        <h2><a href="{% url 'clase:buscar_producto' %}">Busqueda Productos</a></h2>
+    </div>
+{% endblock busqueda %}
+
+{% block lista_productos %}
+    <div>
+        <h2><a href="{% url 'clase:lista_productos' %}">Listado de Productos</a></h2>
+    </div>
+{% endblock lista_productos %}

@@ -8,8 +8,8 @@
 {% block contenido %}
     {% for ventas_de_perifericos in ventas %}
         <h1><p>Venta Nº{{ ventas_de_perifericos.Nro_Venta}}</p> <h1>
-        <h2><p>Vendedor: {{ ventas_de_perifericos.vendedor}}</p> <h2> 
-        <h3><p>Cliente:{{ ventas_de_perifericos.cliente}}</p> </h3>
+        <h2><p>Vendedor: {{ ventas_de_perifericos.vendedor}} </p> <h2> 
+        <h2><p>Cliente:{{ ventas_de_perifericos.cliente}}</p> </h2>
         <p>Productos:</p>
         <ul>
             {% for producto in ventas_de_perifericos.producto.all %}

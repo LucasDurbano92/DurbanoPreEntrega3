@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% block title %}
+    Producto | Producto: Lista
+{% endblock title %}
+{% block body_title %}
+    Producto: Lista Productos
+{% endblock body_title %}
+{% block busqueda %}
+
+    <h1>Lista de Productos</h1>
+    <ul>
+        {% for producto in productos %}
+            <h4><li>{{ producto.nombre }}</li></h4>
+        {% endfor %}
+    </ul>
+
+{% endblock busqueda %} 
