@@ -5,7 +5,7 @@
 {% block body_title %}
     Producto: Busqueda de productos
 {% endblock body_title %}
-{% block busqueda %}
+{% block contenido %}
     <form method="GET" action="{% url 'clase:buscar_producto' %}">
         <input type="text" name="q" placeholder="Buscar productos...">
         <button type="submit">Buscar</button>
@@ -16,4 +16,4 @@
             <li>{{ producto.nombre }}</li>
          {% endfor %}
     </ul>
-{% endblock busqueda %} 
+{% endblock contenido %} 
