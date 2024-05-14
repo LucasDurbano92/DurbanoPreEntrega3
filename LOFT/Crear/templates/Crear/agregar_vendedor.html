@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+
+{% block titulo %}
+    Nuevo Vendedor
+{% endblock titulo %}
+
+{% block contenido %}
+    <h2>Agregar Vendedor</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Agregar</button>
+
+    </form>
+
+{% endblock contenido %}

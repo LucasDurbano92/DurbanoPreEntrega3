@@ -12,6 +12,4 @@ urlpatterns = [
     path('buscar-producto/', buscar_producto, name='buscar_producto'),
     path('buscar-venta/', buscar_venta, name='buscar_venta'),
     path('lista-productos/', lista_productos, name='lista_productos'),
-    # path("producto/update/<int:pk>", views.ProductoUpdate.as_view(), name="producto_update"),
-    # path("producto/delete/<int:pk>", views.ProductoDelete.as_view(), name="producto_delete"),
-]
+  ]
